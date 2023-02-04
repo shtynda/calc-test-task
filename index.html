@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="calc">
+            <div class="sliders">
+                <div class="slider-storage">
+                    <label for="storage"
+                        >Storage: <span id="storage-value">0 </span
+                        ><span> GB</span></label
+                    >
+                    <input
+                        type="range"
+                        min="0"
+                        max="1000"
+                        value="0"
+                        class="slider storage"
+                        id="storage"
+                    />
+                </div>
+                <div class="slider-transfer">
+                    <label for="transfer"
+                        >Transfer: <span id="transfer-value">0 </span
+                        ><span> GB</span></label
+                    >
+                    <input
+                        type="range"
+                        min="0"
+                        max="1000"
+                        value="0"
+                        class="slider transfer"
+                        id="transfer"
+                    />
+                </div>
+            </div>
+            <div class="all-company">
+                <div class="company">
+                    <div class="name">Backblaze</div>
+                    <div class="logo">
+                        <img
+                            src="img/logo-backblaze-flame-header.webp"
+                            alt=""
+                        />
+                    </div>
+                    <div class="stata">
+                        <div class="stata-val" id="stat-backblaze"></div>
+                    </div>
+                    <div id="backblaze" class="price">0</div>
+                </div>
+
+                <div class="company">
+                    <div class="name">
+                        Bunny
+                        <div>
+                            <form>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        checked
+                                        id="hdd"
+                                        name="storage"
+                                    />
+                                    <label for="hdd">HDD</label>
+                                </div>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="ssd"
+                                        name="storage"
+                                    />
+                                    <label for="ssd">SSD</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img src="img/bunny.svg" alt="" />
+                    </div>
+                    <div class="stata">
+                        <div class="stata-val" id="stat-bunny"></div>
+                    </div>
+                    <div id="bunny" class="price">0</div>
+                </div>
+                <div class="company">
+                    <div class="name">
+                        Scaleway
+                        <div>
+                            <form>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        checked
+                                        id="single"
+                                        name="storage"
+                                    /><label for="single">single</label>
+                                </div>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="multi"
+                                        name="storage"
+                                    /><label for="multi">multi</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img src="img/3.svg" alt="" />
+                    </div>
+                    <div class="stata">
+                        <div class="stata-val" id="stat-scaleway"></div>
+                    </div>
+                    <div id="scaleway" class="price">0</div>
+                </div>
+                <div class="company">
+                    <div class="name">Vultr</div>
+                    <div class="logo"><img src="img/4.png" alt="" /></div>
+                    <div class="stata">
+                        <div class="stata-val" id="stat-vultr"></div>
+                    </div>
+                    <div id="vultr" class="price">0</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>
